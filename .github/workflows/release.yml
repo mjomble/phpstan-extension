@@ -14,11 +14,11 @@ jobs:
 
     steps:
       - name: "Checkout"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Generate changelog
         id: changelog
-        uses: metcalfc/changelog-generator@v3.0.0
+        uses: metcalfc/changelog-generator@v4.7.0
         with:
           myToken: ${{ secrets.PHPSTAN_BOT_TOKEN }}
 
